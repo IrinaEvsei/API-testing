@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import driver.WebDriverSingleton;
@@ -51,11 +52,27 @@ public class APItest {
         WebElement elm = driver.findElement(By.xpath("//a[contains(., 'planets')]"));
         elm.click();
         WebElement tagCount = driver.findElement(By.xpath("//span[@class='str' and contains(., 'count')]"));
+        WebElement numberCount = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/span[7]"));
+        WebElement tagName = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/span[30]")); // //span[contains(., 'name')]
 
+
+        WebElement next = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
+
+        List<WebElement> elementNameA = driver.findElements(By.xpath("//span[contains(., 'name')]"));
+        System.out.println("Number of elements on the page_1: " + elementNameA.size());
+        next.click();
+
+        List<WebElement> elementNameB = driver.findElements(By.xpath("//span[contains(., 'name')]"));
+        System.out.println("Number of elements on the page_2: " + elementNameB.size());
+
+        String elementCheck = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
+        Assert.assertTrue(elementCheck.contains("page=2"));
+
+        System.out.println("Total: " + (elementNameA.size() + elementNameB.size()));
     }
 
-    @After
-    public void tearDown() {
-        WebDriverSingleton.destroyInstance();
-    }
+//    @After
+//    public void tearDown() {
+//        WebDriverSingleton.destroyInstance();
+//    }
 }
