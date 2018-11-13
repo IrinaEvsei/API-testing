@@ -503,7 +503,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542106032920" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542106154036" />
     <property name="last_opened_file_path" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20171018/36ced462c97f0845b4a7b266a25cebe95d18baa3/json-20171018.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -588,9 +588,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.APItest.countTest" />
+        <item itemvalue="JUnit.APItest.planetsTest" />
         <item itemvalue="JUnit.APItest.apiTesting" />
         <item itemvalue="JUnit.APItest" />
-        <item itemvalue="JUnit.APItest.planetsTest" />
         <item itemvalue="JUnit.APItest.plantsTest" />
       </list>
     </recent_temporary>
