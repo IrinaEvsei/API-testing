@@ -10,11 +10,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import page.PlanetPage;
 
 
 public class APItest {
     private static WebDriver driver;
     private String baseUrl;
+
+    private PlanetPage planetPage = new PlanetPage();
 
     @Before
     public void setUp() {
@@ -36,7 +39,8 @@ public class APItest {
 
     @Test
     public void planetsTest() {
-        driver.get(baseUrl);
+        //driver.get(baseUrl);
+        planetPage.getPlanetPage();
         WebElement elm = driver.findElement(By.xpath("//a[contains(., 'planets')]"));
         elm.click();
         driver.navigate().to(baseUrl+"?format=json");
@@ -48,16 +52,13 @@ public class APItest {
 
     @Test
     public void countTest() {
-        driver.get(baseUrl);
-        WebElement elm = driver.findElement(By.xpath("//a[contains(., 'planets')]"));
-        elm.click();
+        planetPage.getPlanetPage();
+        planetPage.navigateToPlanets();
         String numberCount = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/span[7]")).getText();
-
-        WebElement nextA = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
 
         List<WebElement> elementNameA = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_1: " + elementNameA.size());
-        nextA.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameB = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_2: " + elementNameB.size());
@@ -65,8 +66,7 @@ public class APItest {
         String elementCheckB = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
         Assert.assertTrue(elementCheckB.contains("page=2"));
 
-        WebElement nextB = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
-        nextB.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameC = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_3: " + elementNameC.size());
@@ -74,8 +74,7 @@ public class APItest {
         String elementCheckC = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
         Assert.assertTrue(elementCheckC.contains("page=3"));
 
-        WebElement nextC = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
-        nextC.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameD = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_4: " + elementNameD.size());
@@ -83,8 +82,7 @@ public class APItest {
         String elementCheckD = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
         Assert.assertTrue(elementCheckD.contains("page=4"));
 
-        WebElement nextD = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
-        nextD.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameE = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_5: " + elementNameE.size());
@@ -92,8 +90,7 @@ public class APItest {
         String elementCheckE = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
         Assert.assertTrue(elementCheckE.contains("page=5"));
 
-        WebElement nextE = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
-        nextE.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameF = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_6: " + elementNameF.size());
@@ -101,8 +98,7 @@ public class APItest {
         String elementCheckF = driver.findElement(By.xpath("//div[@class='request-info']//pre[@class='prettyprint']")).getText();
         Assert.assertTrue(elementCheckF.contains("page=6"));
 
-        WebElement nextF = driver.findElement(By.xpath("//*[@id=\"content\"]/div/div[3]/pre/a[1]/span"));
-        nextF.click();
+        planetPage.clickToNextPage();
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameG = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_7: " + elementNameG.size());
