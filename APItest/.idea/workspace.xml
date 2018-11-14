@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/test/java/APItest.java" line="125" />
+    <bookmark url="file://$PROJECT_DIR$/src/test/java/APItest.java" line="115" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b03f06e-69b3-4b73-86ac-2818278f0221" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/elements/Elements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/page/PlanetPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/APItest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/APItest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/elements/Elements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/elements/Elements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/PlanetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/PlanetPage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -82,27 +81,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1263" />
+          <entry key="java" value="1414" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1263" />
+          <entry key="JAVA" value="1414" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/APItest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
+            <state relative-caret-position="114">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6704#6705#0" expanded="true" />
-                <element signature="e#6756#6757#0" expanded="true" />
+                <element signature="e#6285#6286#0" expanded="true" />
+                <element signature="e#6337#6338#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,17 +110,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/elements/Elements.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+            <state relative-caret-position="170">
+              <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/page/PlanetPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="323">
+              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -547,7 +546,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542116804073" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542203104892" />
     <property name="last_opened_file_path" value="D:/SELENIUM [Self-edu]/SeleniumPractice/TestProject_Gradle" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -653,15 +652,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="APItest - 2018.11.13 at 13h 45m 29s.xml">
-      <configuration name="APItest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="APItest_apiTesting - 2018.11.13 at 13h 47m 05s.xml">
-      <configuration name="APItest.apiTesting" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="APItest_countTest - 2018.11.13 at 13h 47m 22s.xml">
-      <configuration name="APItest.countTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="APItest_apiTesting - 2018.11.13 at 13h 48m 33s.xml">
       <configuration name="APItest.apiTesting" configurationId="JUnit" />
     </history-entry>
@@ -683,12 +673,21 @@
     <history-entry file="APItest_countTest - 2018.11.13 at 16h 24m 16s.xml">
       <configuration name="APItest.countTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="APItest_countTest - 2018.11.13 at 16h 44m 08s.xml">
+      <configuration name="APItest.countTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="APItest_countTest - 2018.11.13 at 16h 45m 10s.xml">
+      <configuration name="APItest.countTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="APItest_countTest - 2018.11.13 at 16h 46m 57s.xml">
+      <configuration name="APItest.countTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -697,7 +696,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3449024" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3449024" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -739,31 +738,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/APItest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6285#6286#0" expanded="true" />
+            <element signature="e#6337#6338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/elements/Elements.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="90" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+        <state relative-caret-position="170">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/page/PlanetPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="323">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/APItest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="76" column="37" selection-start-line="76" selection-start-column="37" selection-end-line="76" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6704#6705#0" expanded="true" />
-            <element signature="e#6756#6757#0" expanded="true" />
           </folding>
         </state>
       </provider>

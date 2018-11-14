@@ -58,7 +58,9 @@ public class APItest {
 
         List<WebElement> elementNameA = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_1: " + elementNameA.size());
+        //planetPage.countNameTag();
         planetPage.clickToNextPage();
+
 //**********************************************************************************************************************************************************************
         List<WebElement> elementNameB = driver.findElements(By.xpath("//span[contains(., 'name')]"));
         System.out.println("Number of elements on the page_2: " + elementNameB.size());
