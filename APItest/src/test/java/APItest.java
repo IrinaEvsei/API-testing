@@ -29,17 +29,17 @@ public class APItest {
 
     @Test
     public void apiTesting() {
-            driver.get(baseUrl);
-            driver.navigate().to(baseUrl+"?format=json");
-            WebElement element = driver.findElement(By.xpath("//pre"));
-            JSONObject jsonObject = new JSONObject(element.getText());
-            String valueToCheck = jsonObject.toString();
-            Assert.assertTrue(valueToCheck.contains("planets"));
+        planetPage.getPlanetPage();
+        driver.get(baseUrl);
+        driver.navigate().to(baseUrl+"?format=json");
+        WebElement element = driver.findElement(By.xpath("//pre"));
+        JSONObject jsonObject = new JSONObject(element.getText());
+        String valueToCheck = jsonObject.toString();
+        Assert.assertTrue(valueToCheck.contains("planets"));
     }
 
     @Test
     public void planetsTest() {
-        //driver.get(baseUrl);
         planetPage.getPlanetPage();
         WebElement elm = driver.findElement(By.xpath("//a[contains(., 'planets')]"));
         elm.click();
